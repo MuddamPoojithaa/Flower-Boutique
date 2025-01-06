@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <div class="new-user">
+            <p>New user? <a href="#" id="createPasswordLink">Create Password</a></p>
+        </div>
+        <form id="createPasswordForm" class="hidden">
+            <div class="form-group">
+                <label for="newUsername">Username</label>
+                <input type="text" id="newUsername" name="newUsername" required>
+            </div>
+            <div class="form-group">
+                <label for="newPassword">Create Password</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <button type="submit" class="btn">Create Account</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('createPasswordLink').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('loginForm').classList.toggle('hidden');
+            document.getElementById('createPasswordForm').classList.toggle('hidden');
+        });
+
+        // Handle login form submission
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+
+            // Here, you can add validation for username and password
+            // For example, check if username and password are correct
+            // Assuming validation is successful
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // For demonstration purposes, assume login is successful
+            // You may want to add actual authentication logic here
+            if (username && password) { // Basic check
+                // Redirect to home.html
+                window.location.href = 'index.html';
+            }
+        });
+
+        // Handle create account form submission
+        document.getElementById('createPasswordForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+
+            const newPassword = document.getElementById('newPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (newPassword === confirmPassword) {
+                // Here, you can handle account creation logic
+                alert('Account created successfully!'); // Placeholder for further actions
+                // Optionally, redirect or show a success message
+            } else {
+                alert('Passwords do not match. Please try again.');
+            }
+        });
+    </script>
+
+
+
+
+
+
+</body>
+</html>

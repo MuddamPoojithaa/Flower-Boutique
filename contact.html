@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers Bouquet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="contact-info">
+            <span><i class="fa-solid fa-phone"></i> +91 8247547854</span>
+            <span><i class="fa-solid fa-envelope"></i> Advoize2023@gmail.com</span>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for...">
+            <button onclick="performSearch()">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        
+          <script>
+            function performSearch() {
+                const input = document.getElementById('search-input').value.toLowerCase();
+                let url = '';
+        
+                switch (input) {
+                    case 'home':
+                        url = 'index.html'; // Adjust the URL for the Home page
+                        break;
+                    case 'about us':
+                        url = 'about.html'; // Adjust the URL for the About Us page
+                        break;
+                    case 'gallery':
+                        url = 'gallery.html'; // Adjust the URL for the Gallery page
+                        break;
+                    case 'shop':
+                        url = 'shop.html'; // Adjust the URL for the Shop page
+                        break;
+                    case 'occasions':
+                        url = 'occasions.html'; // Adjust the URL for the Occasions page
+                        break;
+                    case 'contact':
+                        url = 'contact.html'; // Adjust the URL for the Contact page
+                        break;
+                    case 'login':
+                        url = 'login.html'; // Adjust the URL for the Login page
+                        break;
+                    default:
+                        alert('Page not found!'); // Alert for invalid input
+                        return; // Exit the function
+                }
+        
+                // Redirect to the corresponding page
+                window.location.href = url;
+            }
+        </script>
+
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+        </div>
+
+       
+    </header>
+   
+   
+        
+        
+    <div class="custom-nav">
+       
+        
+        <nav class="custom-menu">
+           
+            <ul>
+                <div class="container">
+                    <!-- Logo -->
+                    <div class="logo">Flowers</div>
+                  
+                </div>
+               
+                <li class="dropdown"><a href="index.html">HOME<span class="arrow"></span></a>
+                  
+                    <div class="custom-dropdown">
+                    
+                        
+                        
+                        <div class="custom-column">
+                            <a href="gallery.html"><h3>Anniversary Collection</h3></a>
+                            <p>Classic Heart - i Choose You</p>
+                            <p>Heart of Roses - Classic Grande</p>
+                            <p>Carnations - Petite Heart</p>
+                            <p>Valentine mix bunch</p>
+                        </div>
+                        <div class="custom-column">
+                            <a href="gallery.html"><h3>Birthday Collection</h3></a>
+                            <p>Blushing Elegance</p>
+                            <p>Rosy Whispers</p>
+                            <p>Rosy Splendor</p>
+                            <p>Pastel Peonies</p>
+                        </div>
+                        <div class="custom-column">
+                            <a href="gallery.html"><h3>Valentines Day Special</h3></a>
+                            <p>Valentino - Bunch</p>
+                            <p>Forever Yours</p>
+                            <p>Mega Love Box</p>
+                            <p>Fuchsia Charm</p>
+                            
+                        </div>
+                        <div class="custom-column">
+                            <a href="gallery.html"><h3>Father's Day Collection</h3></a>
+                            <p>Lilies - Classic Ronde</p>
+                            <p>Sweet Mix - Petite Ronde</p>
+                            <p>Stardust - Classic Ronde</p>
+                            <p>Hydrangeas - Bunch</p>
+                        </div>
+                        <div class="custom-column">
+                            <a href="gallery.html"><h3>Mother's Day Collection</h3></a>
+                            <p>Spring Mix - Petite Ronde</p>
+                            <p>Roses - Glass Cubo</p>
+                            <p>Heart of Roses - Classic Grande</p>
+                            <p>Classic Bunch</p>
+                        </div>
+                        <div class="custom-banner">
+                            <img src="images/img1.jpg" alt="Sale Banner">
+                        </div>
+                    </div>
+                </li>
+                <li><a href="About.html">ABOUT US </a></li>
+                <li class="dropdown"><a href="gallery.html">GALLERY<span class="arrow"></span></a>
+                    <div class="custom-dropdown">
+                        <div class="custom-column">
+                            <a href="gallery.html"><h3>Anniversary Collection</h3></a>
+                            <p>Classic Heart - i Choose You</p>
+                            <p>Heart of Roses - Classic Grande</p>
+                            <p>Carnations - Petite Heart</p>
+                            <p>Valentine mix bunch</p>
+                        </div>
+                        <div class="custom-column">
+                            <a href="gallery.html"><h3>Birthday Collection</h3></a>
+                            <p>Blushing Elegance</p>
+                            <p>Rosy Whispers</p>
+                            <p>Rosy Splendor</p>
+                            <p>Pastel Peonies</p>
+                        </div>
+                        <div class="custom-column">
+                            <a href="gallery.html"><h3>Valentines Day Special</h3></a>
+                            <p>Valentino - Bunch</p>
+                            <p>Forever Yours</p>
+                            <p>Mega Love Box</p>
+                            <p>Fuchsia Charm</p>
+                            
+                        </div>
+                        <div class="custom-column">
+                            <a href="gallery.html"><h3>Father's Day Collection</h3></a>
+                            <p>Lilies - Classic Ronde</p>
+                            <p>Sweet Mix - Petite Ronde</p>
+                            <p>Stardust - Classic Ronde</p>
+                            <p>Hydrangeas - Bunch</p>
+                        </div>
+                        <div class="custom-column">
+                            <a href="gallery.html"><h3>Mother's Day Collection</h3></a>
+                            <p>Spring Mix - Petite Ronde</p>
+                            <p>Roses - Glass Cubo</p>
+                            <p>Heart of Roses - Classic Grande</p>
+                            <p>Classic Bunch</p>
+                        </div>
+                        <div class="custom-banner">
+                            <img src="images/img1.jpg" alt="Sale Banner">
+                        </div>
+                    </div>
+                </li>
+    
+                <li class="dropdown"><a href="shop.html">SHOP OCCASIONS<span class="arrow"></span></a>
+                    <div class="custom-dropdown">
+                        <div class="custom-column">
+                            <a href="gallery.html"><h3>Anniversary Collection</h3></a>
+                            <p>Classic Heart - i Choose You</p>
+                            <p>Heart of Roses - Classic Grande</p>
+                            <p>Carnations - Petite Heart</p>
+                            <p>Valentine mix bunch</p>
+                        </div>
+                        <div class="custom-column">
+                            <a href="gallery.html"><h3>Birthday Collection</h3></a>
+                            <p>Blushing Elegance</p>
+                            <p>Rosy Whispers</p>
+                            <p>Rosy Splendor</p>
+                            <p>Pastel Peonies</p>
+                        </div>
+                        <div class="custom-column">
+                            <a href="gallery.html"><h3>Valentines Day Special</h3></a>
+                            <p>Valentino - Bunch</p>
+                            <p>Forever Yours</p>
+                            <p>Mega Love Box</p>
+                            <p>Fuchsia Charm</p>
+                            
+                        </div>
+                        <div class="custom-column">
+                            <a href="gallery.html"><h3>Father's Day Collection</h3></a>
+                            <p>Lilies - Classic Ronde</p>
+                            <p>Sweet Mix - Petite Ronde</p>
+                            <p>Stardust - Classic Ronde</p>
+                            <p>Hydrangeas - Bunch</p>
+                        </div>
+                        <div class="custom-column">
+                            <a href="gallery.html"><h3>Mother's Day Collection</h3></a>
+                            <p>Spring Mix - Petite Ronde</p>
+                            <p>Roses - Glass Cubo</p>
+                            <p>Heart of Roses - Classic Grande</p>
+                            <p>Classic Bunch</p>
+                        </div>
+                       
+                        
+                        
+                        <div class="custom-banner">
+                            <img src="images/img1.jpg" alt="Sale Banner">
+                        </div>
+                    </div>
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>
+                
+                <!-- Additional Links -->
+                 <div class="Custom-links">
+                <li>
+                    <a href="login.html" class="signin">
+                        <i class="fa fa-user"></i>LOGIN
+                    </a>
+                </li>
+                <li>
+                    <a href="cart.html" class="cart">
+                        <i class="fa fa-shopping-cart"></i> CART
+                    </a>
+                </li>
+              
+                 </div>
+            </ul>
+      
+            
+        </nav>
+    </div>
+
+
+    
+
+
+   
+
+    <div class="category-section">
+      <div class="category-item">
+      <a href="shop.html"><img src="images/18.-Bouquet-of-Pink-rose-lilliesPink-spray-roses-and-wax-flowers-350x412.jpg" alt="Grocery"></a>
+        <p>Rose-lillies</p>
+      </div>
+      <div class="category-item">
+        <a href="shop.html"><img src="images/21.-Bouquet-of-pink-spray-roses-and-green-chrysanthemum-buttons.jpg" alt="Mobiles"></a>
+        <p>Spray-roses</p>
+      </div>
+      <div class="category-item">
+        <a href="shop.html"><img src="images/22.-Bouquet-of-Pink-spray-rosespink-roses-and-pink-carnation.jpg" alt="Fashion"></a>
+        <p>Lillies Pink</p>
+      </div>
+      <div class="category-item">
+        <a href="shop.html"><img src="images/23.-Bouquet-of-pink-roses-tied-with-ribbon.jpg" alt="Electronics"></a>
+        <p>White-roses</p>
+      </div>
+      <div class="category-item">
+       <a href="shop.html" ><img src="images/28.-Bouquet-of-white-rose-lillies.jpg" alt="Home & Furniture"></a>
+        <p>Pink-carnation</p>
+      </div>
+      <div class="category-item">
+        <a href="shop.html"><img src="images/4.-Bouquet-of-20-stem-red-roses.jpg" alt="Appliances"></a>
+        <p>Green-chrysanthemum</p>
+      </div>
+      <div class="category-item">
+        <a href="shop.html"><img src="images/DSC5594.jpg" alt="Flight Bookings"></a>
+        <p>Stem-red-roses</p>
+      </div>
+      <div class="category-item">
+      <a href="shop.html">  <img src="images/VB-12-RD.jpg" alt="Beauty, Toys & More"></a>
+        <p>Lillies Pink</p>
+      </div>
+      <div class="category-item">
+       <a href="shop.html"><img src="images/beautiful-bouquet-roses.jpg" alt="Two Wheelers"></a>
+        <p>Spray-roses</p>
+      </div>
+    </div>
+
+
+
+
+
+      <section class="my-parallax">
+        <div class="my-overlay"></div>
+        <div class="my-text">
+            <p class="my-subtitle hidden">Contact</p>
+            <h1 class="my-title hidden">Our Most Popular Flowers</h1>
+           
+        </div>
+    </section>
+    
+    
+    
+    <script>
+       document.addEventListener("DOMContentLoaded", () => {
+        const parallaxSection = document.querySelector(".my-parallax");
+        const title = parallaxSection.querySelector(".my-title");
+        const subtitle = parallaxSection.querySelector(".my-subtitle");
+    
+        const checkVisibility = () => {
+            const sectionRect = parallaxSection.getBoundingClientRect();
+            if (sectionRect.top < window.innerHeight && sectionRect.bottom > 0) {
+                title.classList.add("show-title");
+                subtitle.classList.add("show-subtitle");
+                window.removeEventListener('scroll', checkVisibility); // Stop checking once visible
+            }
+        };
+    
+        window.addEventListener('scroll', checkVisibility);
+    });
+    
+    </script>
+    
+
+
+
+
+
+
+<section class="contact-section">
+    <div class="container">
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <h2>GET IN TOUCH</h2>
+        <p>We love connecting with you! Have a question or feedback? Reach out using the details below or via the form.</p>
+        <p><strong>Address:</strong> PRAJAY PRINCETON TOWERS, #502, 5th Floor, Hyderabad, Telangana-500035</p>
+        <p><strong>Phone:</strong> +91 8247547854</p>
+        <p><strong>Email:</strong> Advoize2023@gmail.com</p>
+        <p><strong>Working Hours:</strong> Mon - Fri: 11 AM - 11 PM</p>
+        <div class="social-icons">
+          <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+  
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form action="#" method="POST" name="submit-to-google-sheet">
+          <!-- Group 1: Name, Email -->
+          <div class="form-group">
+            <input type="text" name="Name"  id="Name" placeholder="Your Name*" required>
+            <input type="email" name="Email" id="Email" placeholder="Your Email*" required>
+          </div>
+          <!-- Group 2: Phone -->
+          <div class="form-group">
+            <input type="tel" name="Phone"  id="Phone" placeholder="Your Phone Number*" required pattern="[0-9]{10}" title="Enter a valid 10-digit phone number">
+          </div>
+          <!-- Group 3: Contact Reason Dropdown -->
+         
+          
+          <!-- Group 4: Message -->
+          <div class="form-group">
+            <textarea name="Message"  id ="Message"placeholder="Write your message here..." rows="6" required></textarea>
+          </div>
+          
+          
+          <!-- Submit and Reset Buttons -->
+          <div class="form-group buttons">
+            <button type="submit">SEND MESSAGE</button>
+            <button type="reset">RESET</button>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwxlNJslyq9qRn9aF3LXQcCWIdwf-VyHI7MLHgn84FzPNrJfNYwqAG-Wk3X_YSh4uuX/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! We have received your contact information and queries. We will get back to you shortly."))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
+  </script>
+
+
+
+
+
+
+  
+  <section class="google-map-section">
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15232.716891627251!2d78.5451973!3d17.3551069!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9959ded8ad11%3A0x93e5938941aee5b6!2sAdvoize.com%20Best%20Digital%20Marketing%20Agency%20In%20Hyderabad!5e0!3m2!1sen!2sin!4v1733484502307!5m2!1sen!2sin" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+ 
+<footer class="footer">
+    <div class="container">
+      <div class="footer-section">
+        <h2>Flowers</h2>
+        <p>" We Provide Various Types Of Flowers  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat purus. 
+            Duis turpis nunc aliquam id nunc accumsan dictum nisi."</p>
+        <div class="social-icons2">
+          <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <p>HOME</p>
+        <p>ABOUT US</p>
+        <p>GALLERY</p>
+        <p>SHOP OCCASIONS</p>
+        <p>CONTACT</p>
+      </div>
+      <div class="footer-section">
+        <h3>Our Address</h3>
+        <p>PRAJAY PRINCETON TOWERS, #502, 5th Floor, Hyderabad, Telangana-500035</p>
+        <p><i class="fa fa-phone"></i> <span> +91 8247547854</span></p>
+        <p><i class="fa fa-envelope"></i> <a href="Advoize2023@gmail.com">Advoize2023@gmail.com</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Newsletter</h3>
+        <p>Receive the latest news from us.</p>
+        <form>
+          <input type="email" placeholder="Your Email Address" required>
+          <button type="submit">Subscribe</button>
+          <div>
+            <input type="checkbox" id="privacy" required>
+            <label for="privacy">I agree to the Privacy Policy</label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Advoize, All Rights Reserved</p>
+     
+      
+    </div>
+  </footer>
+  

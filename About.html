@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers Bouquet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
+
+</head>
+<body>
+    <header class="topbar">
+        <div class="contact-info">
+            <span><i class="fa-solid fa-phone"></i> +91 8247547854</span>
+            <span><i class="fa-solid fa-envelope"></i> Advoize2023@gmail.com</span>
+        </div>
+
+        <div class="search-bar">
+          <input type="text" id="search-input" placeholder="Search for...">
+          <button onclick="performSearch()">
+              <i class="fa fa-search"></i>
+          </button>
+      </div>
+      
+        <script>
+          function performSearch() {
+              const input = document.getElementById('search-input').value.toLowerCase();
+              let url = '';
+      
+              switch (input) {
+                  case 'home':
+                      url = 'index.html'; // Adjust the URL for the Home page
+                      break;
+                  case 'about us':
+                      url = 'about.html'; // Adjust the URL for the About Us page
+                      break;
+                  case 'gallery':
+                      url = 'gallery.html'; // Adjust the URL for the Gallery page
+                      break;
+                  case 'shop':
+                      url = 'shop.html'; // Adjust the URL for the Shop page
+                      break;
+                  case 'occasions':
+                      url = 'occasions.html'; // Adjust the URL for the Occasions page
+                      break;
+                  case 'contact':
+                      url = 'contact.html'; // Adjust the URL for the Contact page
+                      break;
+                  case 'login':
+                      url = 'login.html'; // Adjust the URL for the Login page
+                      break;
+                  default:
+                      alert('Page not found!'); // Alert for invalid input
+                      return; // Exit the function
+              }
+      
+              // Redirect to the corresponding page
+              window.location.href = url;
+          }
+      </script>
+      
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+        </div>
+
+       
+    </header>
+   
+   
+        
+        
+    <div class="custom-nav">
+       
+        
+        <nav class="custom-menu">
+           
+            <ul>
+                <div class="container">
+                    <!-- Logo -->
+                    <div class="logo">Flowers</div>
+                  
+                </div>
+               
+                <li class="dropdown"><a href="index.html">HOME<span class="arrow"></span></a>
+                  
+                  <div class="custom-dropdown">
+                    
+                        
+                        
+                    <div class="custom-column">
+                        <a href="gallery.html"><h3>Anniversary Collection</h3></a>
+                        <p>Classic Heart - i Choose You</p>
+                        <p>Heart of Roses - Classic Grande</p>
+                        <p>Carnations - Petite Heart</p>
+                        <p>Valentine mix bunch</p>
+                    </div>
+                    <div class="custom-column">
+                        <a href="gallery.html"><h3>Birthday Collection</h3></a>
+                        <p>Blushing Elegance</p>
+                        <p>Rosy Whispers</p>
+                        <p>Rosy Splendor</p>
+                        <p>Pastel Peonies</p>
+                    </div>
+                    <div class="custom-column">
+                        <a href="gallery.html"><h3>Valentines Day Special</h3></a>
+                        <p>Valentino - Bunch</p>
+                        <p>Forever Yours</p>
+                        <p>Mega Love Box</p>
+                        <p>Fuchsia Charm</p>
+                        
+                    </div>
+                    <div class="custom-column">
+                        <a href="gallery.html"><h3>Father's Day Collection</h3></a>
+                        <p>Lilies - Classic Ronde</p>
+                        <p>Sweet Mix - Petite Ronde</p>
+                        <p>Stardust - Classic Ronde</p>
+                        <p>Hydrangeas - Bunch</p>
+                    </div>
+                    <div class="custom-column">
+                        <a href="gallery.html"><h3>Mother's Day Collection</h3></a>
+                        <p>Spring Mix - Petite Ronde</p>
+                        <p>Roses - Glass Cubo</p>
+                        <p>Heart of Roses - Classic Grande</p>
+                        <p>Classic Bunch</p>
+                    </div>
+                    <div class="custom-banner">
+                        <img src="images/img1.jpg" alt="Sale Banner">
+                    </div>
+                </div>
+            </li>
+            <li><a href="About.html">ABOUT US </a></li>
+            <li class="dropdown"><a href="gallery.html">GALLERY<span class="arrow"></span></a>
+                <div class="custom-dropdown">
+                    <div class="custom-column">
+                        <a href="gallery.html"><h3>Anniversary Collection</h3></a>
+                        <p>Classic Heart - i Choose You</p>
+                        <p>Heart of Roses - Classic Grande</p>
+                        <p>Carnations - Petite Heart</p>
+                        <p>Valentine mix bunch</p>
+                    </div>
+                    <div class="custom-column">
+                        <a href="gallery.html"><h3>Birthday Collection</h3></a>
+                        <p>Blushing Elegance</p>
+                        <p>Rosy Whispers</p>
+                        <p>Rosy Splendor</p>
+                        <p>Pastel Peonies</p>
+                    </div>
+                    <div class="custom-column">
+                        <a href="gallery.html"><h3>Valentines Day Special</h3></a>
+                        <p>Valentino - Bunch</p>
+                        <p>Forever Yours</p>
+                        <p>Mega Love Box</p>
+                        <p>Fuchsia Charm</p>
+                        
+                    </div>
+                    <div class="custom-column">
+                        <a href="gallery.html"><h3>Father's Day Collection</h3></a>
+                        <p>Lilies - Classic Ronde</p>
+                        <p>Sweet Mix - Petite Ronde</p>
+                        <p>Stardust - Classic Ronde</p>
+                        <p>Hydrangeas - Bunch</p>
+                    </div>
+                    <div class="custom-column">
+                        <a href="gallery.html"><h3>Mother's Day Collection</h3></a>
+                        <p>Spring Mix - Petite Ronde</p>
+                        <p>Roses - Glass Cubo</p>
+                        <p>Heart of Roses - Classic Grande</p>
+                        <p>Classic Bunch</p>
+                    </div>
+                    <div class="custom-banner">
+                        <img src="images/img1.jpg" alt="Sale Banner">
+                    </div>
+                </div>
+            </li>
+
+            <li class="dropdown"><a href="shop.html">SHOP OCCASIONS<span class="arrow"></span></a>
+                <div class="custom-dropdown">
+                    <div class="custom-column">
+                        <a href="gallery.html"><h3>Anniversary Collection</h3></a>
+                        <p>Classic Heart - i Choose You</p>
+                        <p>Heart of Roses - Classic Grande</p>
+                        <p>Carnations - Petite Heart</p>
+                        <p>Valentine mix bunch</p>
+                    </div>
+                    <div class="custom-column">
+                        <a href="gallery.html"><h3>Birthday Collection</h3></a>
+                        <p>Blushing Elegance</p>
+                        <p>Rosy Whispers</p>
+                        <p>Rosy Splendor</p>
+                        <p>Pastel Peonies</p>
+                    </div>
+                    <div class="custom-column">
+                        <a href="gallery.html"><h3>Valentines Day Special</h3></a>
+                        <p>Valentino - Bunch</p>
+                        <p>Forever Yours</p>
+                        <p>Mega Love Box</p>
+                        <p>Fuchsia Charm</p>
+                        
+                    </div>
+                    <div class="custom-column">
+                        <a href="gallery.html"><h3>Father's Day Collection</h3></a>
+                        <p>Lilies - Classic Ronde</p>
+                        <p>Sweet Mix - Petite Ronde</p>
+                        <p>Stardust - Classic Ronde</p>
+                        <p>Hydrangeas - Bunch</p>
+                    </div>
+                    <div class="custom-column">
+                        <a href="gallery.html"><h3>Mother's Day Collection</h3></a>
+                        <p>Spring Mix - Petite Ronde</p>
+                        <p>Roses - Glass Cubo</p>
+                        <p>Heart of Roses - Classic Grande</p>
+                        <p>Classic Bunch</p>
+                    </div>
+                   
+                    
+                        
+                        <div class="custom-banner">
+                            <img src="images/img1.jpg" alt="Sale Banner">
+                        </div>
+                    </div>
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>
+                
+                <!-- Additional Links -->
+                 <div class="Custom-links">
+                <li>
+                    <a href="login.html" class="signin">
+                        <i class="fa fa-user"></i>LOGIN
+                    </a>
+                </li>
+                <li>
+                    <a href="cart.html" class="cart">
+                        <i class="fa fa-shopping-cart"></i> CART
+                    </a>
+                </li>
+              
+                 </div>
+            </ul>
+      
+            
+        </nav>
+    </div>
+
+
+   
+
+    <div class="category-section">
+      <div class="category-item">
+      <a href="shop.html"><img src="images/18.-Bouquet-of-Pink-rose-lilliesPink-spray-roses-and-wax-flowers-350x412.jpg" alt="Grocery"></a>
+        <p>Rose-lillies</p>
+      </div>
+      <div class="category-item">
+        <a href="shop.html"><img src="images/21.-Bouquet-of-pink-spray-roses-and-green-chrysanthemum-buttons.jpg" alt="Mobiles"></a>
+        <p>Spray-roses</p>
+      </div>
+      <div class="category-item">
+        <a href="shop.html"><img src="images/22.-Bouquet-of-Pink-spray-rosespink-roses-and-pink-carnation.jpg" alt="Fashion"></a>
+        <p>Lillies Pink</p>
+      </div>
+      <div class="category-item">
+        <a href="shop.html"><img src="images/23.-Bouquet-of-pink-roses-tied-with-ribbon.jpg" alt="Electronics"></a>
+        <p>White-roses</p>
+      </div>
+      <div class="category-item">
+       <a href="shop.html" ><img src="images/28.-Bouquet-of-white-rose-lillies.jpg" alt="Home & Furniture"></a>
+        <p>Pink-carnation</p>
+      </div>
+      <div class="category-item">
+        <a href="shop.html"><img src="images/4.-Bouquet-of-20-stem-red-roses.jpg" alt="Appliances"></a>
+        <p>Green-chrysanthemum</p>
+      </div>
+      <div class="category-item">
+        <a href="shop.html"><img src="images/DSC5594.jpg" alt="Flight Bookings"></a>
+        <p>Stem-red-roses</p>
+      </div>
+      <div class="category-item">
+      <a href="shop.html">  <img src="images/VB-12-RD.jpg" alt="Beauty, Toys & More"></a>
+        <p>Lillies Pink</p>
+      </div>
+      <div class="category-item">
+       <a href="shop.html"><img src="images/beautiful-bouquet-roses.jpg" alt="Two Wheelers"></a>
+        <p>Spray-roses</p>
+      </div>
+    </div>
+
+
+
+ 
+
+    <section class="my-parallax">
+      <div class="my-overlay"></div>
+      <div class="my-text">
+          <p class="my-subtitle hidden">About</p>
+          <h1 class="my-title hidden">Our Most Popular Flowers</h1>
+         
+      </div>
+  </section>
+  
+  
+  
+  <script>
+     document.addEventListener("DOMContentLoaded", () => {
+      const parallaxSection = document.querySelector(".my-parallax");
+      const title = parallaxSection.querySelector(".my-title");
+      const subtitle = parallaxSection.querySelector(".my-subtitle");
+  
+      const checkVisibility = () => {
+          const sectionRect = parallaxSection.getBoundingClientRect();
+          if (sectionRect.top < window.innerHeight && sectionRect.bottom > 0) {
+              title.classList.add("show-title");
+              subtitle.classList.add("show-subtitle");
+              window.removeEventListener('scroll', checkVisibility); // Stop checking once visible
+          }
+      };
+  
+      window.addEventListener('scroll', checkVisibility);
+  });
+  
+  </script>
+  
+
+
+
+
+
+
+
+
+  <section class="narrative-section">
+    <div class="narrative-container">
+        <!-- Left Content -->
+        <div class="narrative-text">
+            <h2>Welcome</h2>
+            <h1>Discover Our Story</h1>
+            <img src="./images/heading-var-shap.webp" alt="Heading Decoration" class="narrative-deco">
+            <p>
+              Flowers are nature's most beautiful expression of love and joy. Their vibrant colors and soothing fragrances have the power to brighten any space and uplift our spirits. Each flower tells its own story—roses symbolize love, tulips represent elegance, and daisies stand for innocence
+            </p>
+            <a href="gallery.html" class="explore-btn">Discover About</a>
+        </div>
+
+        <!-- Right Images -->
+        <div class="narrative-images">
+            <img src="./images/beautiful-bouquet-roses.jpg" alt="Dessert" class="narrative-image">
+            <img src="./images/beautiful-rose-bouquet-by-sea.jpg" alt="Burger" class="narrative-image">
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const narrativeSection = document.querySelector(".narrative-section");
+        const narrativeImages = document.querySelectorAll(".narrative-image");
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        // Add the visible class for container animation
+                        narrativeSection.querySelector(".narrative-images").classList.add("visible");
+
+                        // Add staggered animation for each image
+                        narrativeImages.forEach((img, index) => {
+                            setTimeout(() => {
+                                img.classList.add("visible");
+                            }, index * 200); // Delay for each image
+                        });
+                    }
+                });
+            },
+            {
+                threshold: 0.5, // Trigger when 50% of the section is visible
+            }
+        );
+
+        observer.observe(narrativeSection);
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="my-parallax">
+    <div class="my-overlay"></div>
+    <div class="my-text">
+        <h1 class="my-title hidden">We create your delicious memories </h1>
+        <p class="my-subtitle hidden">Our Most Popular Flowers</p>
+    </div>
+</section>
+
+
+
+<script>
+   document.addEventListener("DOMContentLoaded", () => {
+    const parallaxSection = document.querySelector(".my-parallax");
+    const title = parallaxSection.querySelector(".my-title");
+    const subtitle = parallaxSection.querySelector(".my-subtitle");
+
+    const checkVisibility = () => {
+        const sectionRect = parallaxSection.getBoundingClientRect();
+        if (sectionRect.top < window.innerHeight && sectionRect.bottom > 0) {
+            title.classList.add("show-title");
+            subtitle.classList.add("show-subtitle");
+            window.removeEventListener('scroll', checkVisibility); // Stop checking once visible
+        }
+    };
+
+    window.addEventListener('scroll', checkVisibility);
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+<section class="services">
+    <h2>What we offer</h2>
+    <h3>Our Great Services</h3>
+    <div class="service-container">
+      <div class="service-box">
+       <a href="reservation.html"> <i class="fas fa-calendar-alt"></i> </a><!-- Calendar icon -->
+        <h4>Opened 24/7</h4>
+        <p>Rodich Restaurants is open 24/7 to satisfy all of our valuable customers!</p>
+      </div>
+      <div class="service-box">
+      <a href="reservation.html" ><i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+      </a><!-- Utensils icon -->
+        <h4>Easy Payments</h4>
+        <p>Ask for our daily specials, including the vegetarian dish of the day.</p>
+      </div>
+      <div class="service-box">
+       <a href="reservation.html"> <i class="fas fa-bicycle"></i> </a><!-- Bicycle icon -->
+        <h4>Home Delivery</h4>
+        <p>Everyday essentials delivered on time with a schedule you set.</p>
+      </div>
+    </div>
+  </section>
+  
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const servicesSection = document.querySelector(".services");
+  const serviceBoxes = document.querySelectorAll(".service-box");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Add 'fade-in' class to all service boxes once the services section is visible
+          serviceBoxes.forEach((box, index) => {
+            setTimeout(() => {
+              box.classList.add("fade-in");
+            }, index * 200); // Delay each box's animation for a staggered effect
+          });
+
+          // Stop observing after the animation is triggered
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.5 } // Trigger when 50% of the section is visible
+  );
+
+  // Add the 'hidden' class initially to all service boxes
+  serviceBoxes.forEach((box) => box.classList.add("hidden"));
+
+  // Observe the services section
+  observer.observe(servicesSection);
+});
+
+</script>
+
+
+
+
+
+<section class="about-parallex">
+  <div class="about-overlay"></div>
+  <div class="about-text-wrapper">
+    <div class="testi-clients">
+      <div class="testimonials">
+        
+        <div class="contents-wraper">
+          
+          <section class="header"><h1>Testimonials</h1></section>
+      
+          <section class="testRow">
+            
+            <div class="testItem active">
+              <img src="images/18.-Bouquet-of-Pink-rose-lilliesPink-spray-roses-and-wax-flowers-350x412.jpg">
+              <h3>Jane Doe</h3>
+              <h4>San Francisco, USA</h4>
+              <p>  "Absolutely loved the vibrant colors of the Valentine bouquet! It brought a huge smile to my partner’s face. Highly recommended!"</p>
+            </div>
+      
+            <div class="testItem">
+              <img src="images/2-red-roses-on-the-bed-with-white-background-e1620281022739.jpg">
+              <h3>Jane Doe</h3>
+              <h4>San Francisco, USA</h4>
+              <p>"The heart-shaped floral arrangement was breathtaking! The attention to detail was incredible. I’ll definitely order again!"</p>
+            </div>
+      
+            <div class="testItem">
+              <img src="images/21.-Bouquet-of-pink-spray-roses-and-green-chrysanthemum-buttons.jpg">
+              <h3>Jane Doe</h3>
+              <h4>San Francisco, USA</h4>
+              <p> "Absolutely loved the vibrant colors of the Valentine bouquet! It brought a huge smile to my partner’s face. Highly recommended!".</p>
+            </div>
+      
+            <div class="testItem">
+              <img src="images/28.-Bouquet-of-white-rose-lillies.jpg">
+              <h3>Jane Doe</h3>
+              <h4>San Francisco, USA</h4>
+              <p> "Absolutely loved the vibrant colors of the Valentine bouquet! It brought a huge smile to my partner’s face. Highly recommended!".</p>
+            </div>
+      
+            <div class="testItem">
+              <img src="images/23.-Bouquet-of-pink-roses-tied-with-ribbon.jpg">
+              <h3>Jane Doe</h3>
+              <h4>San Francisco, USA</h4>
+              <p> "Absolutely loved the vibrant colors of the Valentine bouquet! It brought a huge smile to my partner’s face. Highly recommended!".</p>
+            </div>
+      
+          </section>
+      
+          <section class="indicators">
+            <div class="dot active" attr='0' onclick="switchTest(this)"></div>
+            <div class="dot" attr='1' onclick="switchTest(this)"></div>
+            <div class="dot" attr='2' onclick="switchTest(this)"></div>
+            <div class="dot" attr='3' onclick="switchTest(this)"></div>
+            <div class="dot" attr='4' onclick="switchTest(this)"></div>
+          </section>
+      
+        </div>
+      </div>
+          </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+	
+	// Access the testimonials
+	let testSlide = document.querySelectorAll('.testItem');
+	// Access the indicators
+	let dots = document.querySelectorAll('.dot');
+
+	var counter = 0;
+
+	// Add click event to the indicators
+	function switchTest(currentTest){
+		currentTest.classList.add('active');
+		var testId = currentTest.getAttribute('attr');
+		if(testId > counter){
+			testSlide[counter].style.animation = 'next1 0.5s ease-in forwards';
+			counter = testId;
+			testSlide[counter].style.animation = 'next2 0.5s ease-in forwards';
+		}
+		else if(testId == counter){return;}
+		else{
+			testSlide[counter].style.animation = 'prev1 0.5s ease-in forwards';
+			counter = testId;
+			testSlide[counter].style.animation = 'prev2 0.5s ease-in forwards';
+		}
+		indicators();
+	}
+
+	// Add and remove active class from the indicators
+	function indicators(){
+		for(i = 0; i < dots.length; i++){
+			dots[i].className = dots[i].className.replace(' active', '');
+		}
+		dots[counter].className += ' active';
+	}
+
+	// Code for auto sliding
+	function slideNext(){
+		testSlide[counter].style.animation = 'next1 0.5s ease-in forwards';
+		if(counter >= testSlide.length - 1){
+			counter = 0;
+		}
+		else{
+			counter++;
+		}
+		testSlide[counter].style.animation = 'next2 0.5s ease-in forwards';
+		indicators();
+	}
+	function autoSliding(){
+		deleteInterval = setInterval(timer, 2000);
+		function timer(){
+			slideNext();
+			indicators();
+		}
+	}
+	autoSliding();
+
+	// Stop auto sliding when mouse is over the indicators
+	const container = document.querySelector('.indicators');
+	container.addEventListener('mouseover', pause);
+	function pause(){
+		clearInterval(deleteInterval);
+	}
+
+	// Resume sliding when mouse is out of the indicators
+	container.addEventListener('mouseout', autoSliding);
+
+</script>
+
+
+
+<section class="culinary-section">
+  <div class="culinary-images">
+    <div class="culinary-image-wrapper">
+      <img src="./images/22.-Bouquet-of-Pink-spray-rosespink-roses-and-pink-carnation.jpg" alt="Elegant Dining Table" class="culinary-image main-image">
+      <img src="./images/VB-12-RD.jpg" alt="Chef at Work" class="culinary-image overlay-image">
+    </div>
+  </div>
+  <div class="culinary-content">
+    <h4 class="culinary-subtitle">Excellence & Harmony</h4>
+    <h2 class="culinary-title">Our Vision</h2>
+    <p class="culinary-description">
+      Flowers are nature's most beautiful expression of love and joy. Their vibrant colors and soothing fragrances have the power to brighten any space and uplift our spirits. Each flower tells its own story—roses symbolize love, tulips represent elegance, and daisies stand for innocence
+    </p>
+    <a href="gallery.html" class="culinary-button">Explore More</a>
+  </div>
+</section>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+const culinarySection = document.querySelector(".culinary-section");
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        culinarySection.classList.add("play-animation");
+        document
+          .querySelectorAll(".culinary-images, .main-image, .overlay-image, .culinary-content")
+          .forEach((el) => el.classList.add("play-animation"));
+      }
+    });
+  },
+  { threshold: 0.1 } // Trigger when 10% is visible
+);
+
+observer.observe(culinarySection);
+});
+</script>
+
+
+
+
+ 
+<footer class="footer">
+    <div class="container">
+      <div class="footer-section">
+        <h2>Flowers</h2>
+        <p>" We Provide Various Types Of Flowers  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat purus. 
+            Duis turpis nunc aliquam id nunc accumsan dictum nisi."</p>
+        <div class="social-icons2">
+          <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <p>HOME</p>
+        <p>ABOUT US</p>
+        <p>GALLERY</p>
+        <p>SHOP OCCASIONS</p>
+        <p>CONTACT</p>
+      </div>
+      <div class="footer-section">
+        <h3>Our Address</h3>
+        <p>PRAJAY PRINCETON TOWERS, #502, 5th Floor, Hyderabad, Telangana-500035</p>
+        <p><i class="fa fa-phone"></i> <span> +91 8247547854</span></p>
+        <p><i class="fa fa-envelope"></i> <a href="Advoize2023@gmail.com">Advoize2023@gmail.com</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Newsletter</h3>
+        <p>Receive the latest news from us.</p>
+        <form>
+          <input type="email" placeholder="Your Email Address" required>
+          <button type="submit">Subscribe</button>
+          <div>
+            <input type="checkbox" id="privacy" required>
+            <label for="privacy">I agree to the Privacy Policy</label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Advoize, All Rights Reserved</p>
+     
+      
+    </div>
+  </footer>
+  
+

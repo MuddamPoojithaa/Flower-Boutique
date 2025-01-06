@@ -1,0 +1,39 @@
+.food-gallery {
+    text-align: center;
+    padding: 10px 50px;
+    background-color: #f9f9f9;
+  }
+
+
+  
+  .food-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+.food-gallery h2 {
+    font-size: 60px;
+    color: black;
+    font-family: "Tangerine", cursive;
+    margin-bottom: -5px;
+    font-weight: 2000;
+  }
+  
+  .food-gallery h3 {
+    font-size: 32px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+
+
+
+  @media (min-width: 481px)  and (max-width:574px){
+.food-gallery h2{
+  margin-top: 300px;
+}
+
+  }
